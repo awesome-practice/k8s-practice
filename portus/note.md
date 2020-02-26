@@ -6,7 +6,7 @@ docker-compose -f docker-compose.yml   up  -d
 docker-compose ps 
 
 ```
-在portus web中配置registry的hostname为.env文件中环境变量MACHINE_FQDN的值，即host.docker.internal
+在portus web中配置registry的hostname为REGISTRY_AUTH_TOKEN_SERVICE的值
 
 2. docker login registry
 ```shell script
@@ -33,4 +33,4 @@ docker push host.docker.internal:5000/eureka-server:1.0
 ##  error authorizing context: insufficient scope
 registry中的log
 解决： 
-在portus web中将registry的hostname配置为.env文件中环境变量MACHINE_FQDN的值，即host.docker.internal
+在portus web中将registry的hostname配置为REGISTRY_AUTH_TOKEN_SERVICE的值
