@@ -27,6 +27,8 @@ docker tag  eureka-server:1.0  host.docker.internal:5000/eureka-server:1.0
 docker push host.docker.internal:5000/eureka-server:1.0
 ```
 
+4. 于portus web上查看image, 需要一阵时间后才能看到
+
 # 问题解决
 ##  error authorizing context: insufficient scope
 registry中的log
