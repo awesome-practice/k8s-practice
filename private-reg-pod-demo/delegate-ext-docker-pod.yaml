@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: delegate-ext-docker
+spec:
+  containers:
+  - name: delegate-ext-docker
+    image: host.docker.internal/eureka-server:3.0
+  imagePullSecrets:
+  - name: delegate-ext-docker

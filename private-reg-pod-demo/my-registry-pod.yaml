@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-registry
+spec:
+  containers:
+  - name: my-registry
+    image: host.docker.internal/minikube-demo:4.0
+  imagePullSecrets:
+  - name: my-registry
